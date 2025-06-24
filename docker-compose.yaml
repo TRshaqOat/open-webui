@@ -25,7 +25,7 @@ services:
       - redis_data:/data
     restart: unless-stopped
     # save sessions in case we need to restart redis
-    command: ['redis-server', '--requirepass', 'tempPass0731!', '--save', '60', '1']
+    command: ['redis-server', '--requirepass', 'TempPass0731!', '--save', '60', '1']
     healthcheck:
       test: ['CMD', 'redis-cli', 'ping']
       interval: 15s
